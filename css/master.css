@@ -1,0 +1,279 @@
+body {
+  background-color: rgba(255, 255, 204);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2em;
+  z-index: 1000;
+  margin: 0;
+  background-color: rgba(153, 153, 204);
+  font-size: 1.5em;
+}
+
+
+header ul {
+  text-align: center;
+  margin: 0;
+}
+
+header li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.35em 2em;
+  /* color: var(--main-bg-color); */
+  color: rgba(255, 255, 204);
+}
+
+.menuContent li {
+  display: block;
+}
+
+.menuContent {
+  display: none;
+}
+
+.show {
+  display: block;
+  text-align: left;
+  background-color:  var(--header-footer-bg-color);
+}
+
+
+header li:hover {
+  background-color: rgba(255, 255, 204);
+  filter: drop-shadow(2px 2px 15px var(--main-bg-color));
+  color: var(--dark-text-color);
+
+}
+
+footer {
+  margin-top: 2em;
+  text-align: center;
+  background-color: var(--header-footer-bg-color);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.2em;
+  color: var(--header-footer-text-color);
+  padding: 0.5em;
+}
+
+
+footer a {
+  color: var(--header-footer-text-color);
+}
+
+.section {
+  border-radius: 1em;
+  background-color: var(--section-bg-color);
+  color: var(--section-text-color);
+  position: relative;
+  padding: 2em;
+  transition: all 1500ms linear;
+}
+
+.section:hover {
+  background-color: var(--section-hover-bg-color);
+  transition: all 1500ms linear;
+}
+
+.section h3 {
+  margin-bottom: 0.5em;
+}
+
+.section a:hover {
+  color: var(--link-hover-text-color);
+}
+
+
+.section ul {
+  margin-top: 0.5em;
+}
+
+
+
+* {
+  font-family: 'Dosis', sans-serif;
+  box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5 {
+  color: var(--light-text-color);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+header li {
+  padding: 0.35em 2em;
+}
+
+header li:hover {
+  color: var(--dark-text-color);
+}
+
+.wrapper {
+  margin: 6em auto;
+  padding: 2em;
+  font-size: 1.2em;
+}
+.wrapper {
+  width: 65%;
+}
+.anchor{
+  /* dont really love this, but this is to cater for the fixed header wrt menu  navigation */
+  display: block;
+  height: 5em;       /*same height as header*/
+  margin-top: -5em;  /*same height as header*/
+  visibility: hidden;
+}
+
+.section {
+  border: black solid 1px;
+  box-shadow: 0.2em 0.2em;
+  border-radius: 1em;
+  margin: 1em 0;
+}
+
+.section li:nth-child(1) {
+  color: var(--section-text-color);
+}
+.section li:nth-child(2) {
+  color: var(--section-text-color);
+}
+.section li:nth-child(3) {
+  color: var(--section-text-color);
+}
+.section li:nth-child(4) {
+  color: var(--section-text-color);
+}
+.section li:nth-child(5) {
+  color: var(--section-text-color);
+}
+.section li:nth-child(6) {
+  color: var(--section-text-color);
+}
+.section li:nth-child(7) {
+  color: var(--section-text-color);
+}
+
+.section:hover {
+  color: var(--dark-text-color);
+}
+
+.section h3 a {
+  color: var(--light-text-color);
+}
+
+.section h3 a:hover {
+  color: var(--section-bg-color);
+  text-decoration: none;
+}
+
+.section a {
+  color: var(--section-text-color);
+  text-decoration: underline;
+}
+
+
+.interlude {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.interlude {
+    height: 60vh;
+    opacity: .3;
+    display: block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+
+
+  #bar {
+    display: none;
+  }
+
+  #burger {
+    display: block;
+  }
+
+  #divButtMenu {
+    margin-bottom: -12px;
+  }
+  .wrapper {
+    width: 95%;
+    margin: 2em auto;
+    padding: 1em;
+    font-size: 1em;
+  }
+
+  .anchor {
+    height: 0;
+    margin-top: 0;
+  }
+
+  #contact1 img {
+    display: none;
+  }
+
+  .section img {
+    display: none;
+  }
+
+
+  .interlude {
+      filter: none;
+      background-image: none;
+      opacity: 0;
+      height: 10vh;
+  }
+
+  footer {
+    font-size: 1em;
+  }
+
+  header li:hover {
+  background-color: var(--main-bg-color);
+  filter: none;
+  color: var(--dark-text-color);
+  }
+
+}
+footer {
+  color: var(--header-footer-text-color);
+}
+
+footer a:hover {
+  color: var(--dark-text-color);
+}
