@@ -1,4 +1,5 @@
 console.log("connected");
+
 let state = {
   styleCounter: 0
 };
@@ -12,6 +13,8 @@ let state = {
     }
 })(jQuery);
 // from https://stackoverflow.com/questions/4801655/how-to-go-to-a-specific-element-on-page
+
+
 
 $(document).on('ready', function () {
   console.log("ready");
@@ -52,6 +55,10 @@ $(document).on('ready', function () {
       console.log("menu click");
       $('.menuContent').toggleClass( "show" );
     })
+
+    
+
+
 
 
   });
