@@ -532,18 +532,18 @@ button.purple:focus ~ h1 { color: rgb(221,160,221); } button.purple:hover ~ h1 {
 	background-color: #fff;
 }
 
-.twitter {
+.envelope {
 	color: #4099FF;
 }
 
-.facebook {
+/* .facebook {
 	color: #3B5998;
-}
-.google-plus {
+} */
+.file-text-o {
 	color: #DB5A3C;
 }
 
-.instagram {
+.linkedin {
 	color: #5C3D2E;
 }
 
@@ -556,7 +556,7 @@ button.purple:focus ~ h1 { color: rgb(221,160,221); } button.purple:hover ~ h1 {
 	color: #FFFFFF;
 }
 
-.twitter:hover {
+.envelope:hover {
 	background-color: #4099FF;
 }
 
@@ -564,11 +564,11 @@ button.purple:focus ~ h1 { color: rgb(221,160,221); } button.purple:hover ~ h1 {
 	background-color: #3B5998;
 }
 
-.google-plus:hover {
+.file-text-o:hover {
 	background-color: #DB5A3C;
 }
 
-.instagram:hover {
+.linkedin:hover {
 	background-color: #5C3D2E;
 }
 
