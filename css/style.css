@@ -264,3 +264,318 @@ h4 {
 .text-right {
 	text-align: right;
 }
+
+@media only screen and (min-width: 500px) {
+
+}
+button {
+	position: relative;
+	background: none;
+	font-family: Ailerons;
+	font-size: 20px;
+	color: #ccc;
+	border: 1px solid;
+	border-radius: 5px;
+	width: 240px;
+	height: 80px;
+	overflow: hidden;
+	animation: color-border 1s ease-out forwards;
+	transition: .5s;
+}
+
+button:focus {
+	outline: none;
+	box-shadow: inset 0px 10px 55px 8px rgba(1,1,23,0.4);
+	text-shadow: 0px 0px 5px rgba(255, 255, 255, .8);
+	color: #fff;
+}
+
+button:before, button:after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: .5s;
+	opacity: .4;
+	filter: blur(30px);
+}
+
+button:before {
+	width: 60px;
+	background-color: rgba(255,255,255, .6);
+	transform: translateX(-130px) skewX(-45deg);
+}
+
+button:after {
+	width: 30px;
+	background-color: rgba(255,255,255, .3);
+	transform: translateX(-115px) skewX(-45deg);
+}
+
+button:hover {
+	color: #fff;
+	cursor: pointer;
+	/* text-shadow: 0px 0px 5px rgba(255, 255, 255, .8);
+	box-shadow: inset 0px 10px 55px 8px rgba(1,1,23,0.4); */
+	animation: up-down .5s ease-out;
+	transition: .5s;
+}
+
+/* Twinkle settings when buttons hover */
+button.style1:hover:before,
+button.style1:hover:after {
+	transform: translateX(320px) skewX(-45deg);
+	transition: .5s;
+	opacity: .8;
+}
+
+button.style2:hover:before,
+button.style2:hover:after {
+	transform: translateX(320px) skewX(45deg);
+	transition: .5s;
+	opacity: .8;
+}
+
+button.style3:hover:before,
+button.style3:hover:after {
+	transform: translateX(320px) skewX(-90deg);
+	transition: .5s;
+	opacity: .8;
+}
+
+button.style4:hover:before,
+button.style4:hover:after  {
+	transform: translateX(320px) skewX(90deg);
+	transition: .5s;
+	opacity: .8;
+}
+
+button.style5:hover:before,
+button.style5:hover:after {
+	transform: translateX(320px) skewX(120deg);
+	transition: .5s;
+	opacity: .8;
+}
+
+button.style6:hover:before,
+button.style6:hover:after {
+	transform: translateX(320px) skewX(-120deg);
+	transition: .5s;
+	opacity: .8;
+}
+
+
+/* Button color settings (border and background are same color) */
+button.red { border-color: rgb(30,144,255); }
+button.red:hover, button.red:focus { background: rgb(135,206,250); }
+
+button.orange { border-color: rgb(255,105,180);}
+button.orange:hover, button.orange:focus { background: rgb(255,232,250); }
+
+button.yellow { border-color: #cebf0c;}
+button.yellow:hover, button.yellow:focus { background: rgb(255,250,205); }
+
+button.green { border-color: rgb(30,144,255);}
+button.green:hover, button.green:focus  { background: rgb(135,206,250); }
+
+button.blue { border-color: #ff6277;}
+button.blue:hover, button.blue:focus { background: #ffc8cf; }
+
+button.purple { border-color: rgb(139,0,139);}
+button.purple:hover, button.purple:focus { background: rgb(221,160,221); }
+
+
+/* Up-Down text in button when buttons hover */
+@keyframes up-down {
+    0% {padding-bottom: 10px;}
+    25% {padding-bottom: 0px;}
+    50% {padding-top: 10px;}
+    100% {padding-top: 0;}
+}
+
+/* Softly show when page loaded */
+@keyframes color-border {
+    0% { color: transparent; border-color: transparent; }
+
+}
+
+
+/*
+	The Codes after this line are unnecessary for the operation of the
+  "Hover Effect". These codes just for the promotion.
+*/
+
+/* Reset Code */
+body {
+	margin: 0;
+	padding: 0;
+	background: #010804;
+
+}
+
+.buttons {
+	position: absolute;
+	margin-top: -2%;
+	margin-left: 80%;
+	transform: translate(-50%,-50%);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 500px;
+	grid-gap: 10px;
+
+}
+
+.buttons h1 {
+	grid-column: 1/3;
+	grid-row: 1/2;
+	text-align: center;
+  color: rgba(255,255,255, .8);
+	font-family: Roboto;
+	font-weight: 100;
+	font-size: 40px;
+	text-shadow: 0px 0px 5px currentColor;
+	animation: color-border 1s ease-out forwards;
+}
+
+button.green{
+  margin-top: 174%;
+  margin-left: -8%;
+  height: 40px;
+  color: black;
+  font-size: 20px;
+
+}
+
+button.orange{
+  margin-top: 210%;
+  margin-left: -110%;
+  height: 40px;
+  color: black;
+  font-size: 20px;
+}
+
+button.red{
+  margin-top: 190%;
+  margin-left:-5%;
+  height: 40px;
+  color: black;
+  font-size: 20px;
+
+}
+
+button.yellow{
+  margin-top: 230%;
+  margin-left: -109%;
+  height: 40px;
+  color: black;
+  font-size: 20px;
+}
+
+button.blue{
+  margin-top: 190%;
+  margin-left:-5%;
+  height: 40px;
+  color: black;
+  font-size: 20px;
+
+}
+
+button.purple{
+  margin-top: 230%;
+  margin-left: -109%;
+  height: 40px;
+  color: black;
+  font-size: 20px;
+}
+
+
+/* Colorize h1 text when buttons hover */
+button.red:focus ~ h1 { color: rgb(135,206,250); } button.red:hover ~ h1 { color: rgb(135,206,250)!important; }
+button.orange:focus ~ h1 { color: rgb(255,232,250); } button.orange:hover ~ h1 { color: rgb(255,232,250)!important; }
+button.yellow:focus ~ h1 { color: rgb(255,250,205); } button.yellow:hover ~ h1 { color: rgb(255,250,205)!important; }
+button.green:focus ~ h1 { color: rgb(135,206,250); } button.green:hover ~ h1 { color: rgb(135,206,250)!important; }
+button.blue:focus ~ h1 { color: #ffc8cf; } button.blue:hover ~ h1 { color: #ffc8cf!important; }
+button.purple:focus ~ h1 { color: rgb(221,160,221); } button.purple:hover ~ h1 { color: rgb(221,160,221)!important; }
+
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+/* body {
+	background-color: #303f56;
+} */
+
+.social {
+	margin: 0 auto;
+	width: 600px;
+	text-align: center;
+	padding: 20px;
+}
+
+.social h2 {
+	color: #86a5d6;
+	font-size: 40px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+[class^="icon-btn"] /*.icon-btn*/ {
+	height: 75px;
+	width: 75px;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 75px;
+	transition: ease-in-out .3s;
+	border-radius: 50px;
+	margin-left: 10px;
+	background-color: #fff;
+}
+
+.twitter {
+	color: #4099FF;
+}
+
+.facebook {
+	color: #3B5998;
+}
+.google-plus {
+	color: #DB5A3C;
+}
+
+.instagram {
+	color: #5C3D2E;
+}
+
+.github {
+	color: #4183C4;
+}
+
+.icon-btn:hover {
+	transform: scale(1.10);
+	color: #FFFFFF;
+}
+
+.twitter:hover {
+	background-color: #4099FF;
+}
+
+.facebook:hover {
+	background-color: #3B5998;
+}
+
+.google-plus:hover {
+	background-color: #DB5A3C;
+}
+
+.instagram:hover {
+	background-color: #5C3D2E;
+}
+
+.github:hover {
+	background-color: #4183C4;
+}
+
+a.link {
+	color: inherit;
+}
