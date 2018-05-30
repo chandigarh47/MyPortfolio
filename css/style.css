@@ -72,8 +72,8 @@ header a, a:visited {
   left:0;
   right:0;
   bottom:0;
-  width:100%;
-  height:4000px;
+  width:200vw;
+  height:650vh;
   display:block;
 }
 
@@ -114,6 +114,8 @@ footer {
     position:relative;
     z-index:5;
 }
+
+
 .typewriter h1 {
   color: #fff;
   font-family: monospace;
@@ -128,6 +130,7 @@ footer {
 }
 
 
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -138,6 +141,16 @@ footer {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .card{
+    display: none;
+  }
+  .bullets li{
+    display: block;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
@@ -578,4 +591,25 @@ button.purple:focus ~ h1 { color: rgb(221,160,221); } button.purple:hover ~ h1 {
 
 a.link {
 	color: inherit;
+}
+
+/* paragraph Typewriter */
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+/* body {margin:0; background:#117A65;} */
+
+.paragraph {
+  position:absolute;
+  font-family: 'Barlow', sans-serif;
+  color:white;
+  font-size:23.1px;
+  width:100%;
+  left:50%;
+  margin-top:140px;
+  transform:translateX(-50%) translateY(-50%);
+  display:none;
+
+  /* border-top:1px solid white; */
+  /* border-bottom:1px solid white; */
+  /* padding:20px 0px; */
 }
