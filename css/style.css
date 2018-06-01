@@ -61,6 +61,26 @@ header a, a:visited {
     to {background-position:10000px 0;}
 }
 
+@media only screen and (min-width: 600px) {
+  .stars, .twinkling, .clouds {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:400vw;
+    height:700vh;
+    display:block;
+  }
+
+  .stars1, .twinkling1, .clouds1 {
+    display: none;
+
+  }
+
+
+}
+@media only screen and (max-width: 3000px) {
 .stars, .twinkling, .clouds {
   position:absolute;
   top:0;
@@ -99,7 +119,7 @@ header a, a:visited {
   animation:move-clouds-back 200s linear infinite;
 }
 
-
+}
 footer {
     background-color:rgba(33, 33, 33, 0.9);
     color:#ffffff;
@@ -110,7 +130,7 @@ footer {
     z-index:5;
 }
 
-
+@media only screen and (min-width: 600px) {
 .typewriter h1 {
   color: #fff;
   font-family: monospace;
@@ -137,7 +157,7 @@ footer {
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
-
+}
 @media only screen and (max-width: 1000px) {
 
   .card{
@@ -273,9 +293,7 @@ h4 {
 	text-align: right;
 }
 
-@media only screen and (min-width: 500px) {
-
-}
+@media only screen and (min-width: 600px) {
 button {
 	position: relative;
 	font-size: 24px;
@@ -460,9 +478,7 @@ body {
 }
 
 button.green{
-
   color: black;
-
 }
 
 button.orange{
@@ -496,11 +512,10 @@ button.green:focus ~ h1 { color: rgb(135,206,250); } button.green:hover ~ h1 { c
 button.blue:focus ~ h1 { color: #ffc8cf; } button.blue:hover ~ h1 { color: #ffc8cf!important; }
 button.purple:focus ~ h1 { color: rgb(221,160,221); } button.purple:hover ~ h1 { color: rgb(221,160,221)!important; }
 
-
+}
 /* @import url('https://fonts.googleapis.com/css?family=PT+Sans'); */
 
-
-
+@media only screen and (min-width: 600px) {
 .social {
 	margin: 0 auto;
 	width: 600px;
@@ -573,6 +588,6 @@ button.purple:focus ~ h1 { color: rgb(221,160,221); } button.purple:hover ~ h1 {
 a.link {
 	color: inherit;
 }
-
+}
 
 /* Hover effect for card*/

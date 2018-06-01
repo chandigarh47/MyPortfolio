@@ -271,7 +271,7 @@ header li:hover {
   height: 50px;
 }
 
-
+@media only screen and (min-width: 600px) {
 td {
   padding: 10px;
 }
@@ -284,6 +284,18 @@ table {
   margin-left: 400px;
   margin-top: -400px;
 }
+}
+@media only screen and (min-width: 1001px) {
+  #bar {
+    display: block;
+  }
+
+  #burger {
+    display: none;
+  }
+
+}
+
 @media only screen and (max-width: 1000px) {
 
   #bar {
@@ -337,7 +349,7 @@ table {
 
 
 footer {
-  color: var(--header-footer-text-color);
+  color: white;
 }
 
 footer a:hover {
