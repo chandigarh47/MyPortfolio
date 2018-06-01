@@ -1,9 +1,4 @@
-/* ==============================================================================================
-Nick Mkrtchyan
-https://www.facebook.com/sonick.pk
-http://www.Mkrtchyan.zz.mu
-================================================================================================= */
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -72,8 +67,8 @@ header a, a:visited {
   left:0;
   right:0;
   bottom:0;
-  width:200vw;
-  height:650vh;
+  width:100vw;
+  height:700vh;
   display:block;
 }
 
@@ -153,11 +148,11 @@ footer {
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+/* @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC'); */
 
 body {
-	font-family: 'Indie Flower', cursive !important;
+	/* font-family: 'Indie Flower', cursive !important; */
   background: #FDE3A7; /*CAPE HONEY*/
 	margin: 0px;
 	padding: 0px;
@@ -170,7 +165,7 @@ body {
 h4 {
 	font-size: 26px;
 	line-height: 1px;
-	font-family: 'Amatic SC', cursive !important;
+	font-family: 'Amatic SC' !important;
 }
 
 .color1{color:#1BBC9B}/*MOUNTAIN MEADOW*/
@@ -180,8 +175,8 @@ h4 {
 .card {
 	color: #013243; /*SHERPA BLUE*/
 	/* position: absolute; */
-	margin-top: 30%;
-	margin-left: 25%;
+	margin-top: 20%;
+	margin-left: 50%;
 	width: 300px;
 	/* height: 400px; */
 	background: #e0e1dc;
@@ -229,7 +224,7 @@ h4 {
 }
 
 .card .bark {
-	position: absolute;
+	position:absolute;
 	background: #e0e1dc;
 	width: 100%;
 	height: 100%;
@@ -283,19 +278,32 @@ h4 {
 }
 button {
 	position: relative;
-	background: none;
-	font-family: Ailerons;
-	font-size: 20px;
-	color: #ccc;
+	font-size: 24px;
+	color: black;
 	border: 1px solid;
 	border-radius: 5px;
-	width: 240px;
-	height: 80px;
+	width: 180px;
+  height: 40px;
 	overflow: hidden;
 	animation: color-border 1s ease-out forwards;
 	transition: .5s;
-}
 
+}
+.button1{
+  margin-left: 28%;
+  margin-top: -80px;
+
+}
+.button2{
+  margin-left: 28%;
+  margin-top: -80px;
+
+}
+.button3{
+  margin-left: 28%;
+  margin-top: -80px;
+
+}
 button:focus {
 	outline: none;
 	box-shadow: inset 0px 10px 55px 8px rgba(1,1,23,0.4);
@@ -316,13 +324,13 @@ button:before, button:after {
 
 button:before {
 	width: 60px;
-	background-color: rgba(255,255,255, .6);
+	/* background-color: rgba(255,255,255, .6); */
 	transform: translateX(-130px) skewX(-45deg);
 }
 
 button:after {
 	width: 30px;
-	background-color: rgba(255,255,255, .3);
+	/* background-color: rgba(255,255,255, .3); */
 	transform: translateX(-115px) skewX(-45deg);
 }
 
@@ -341,6 +349,7 @@ button.style1:hover:after {
 	transform: translateX(320px) skewX(-45deg);
 	transition: .5s;
 	opacity: .8;
+
 }
 
 button.style2:hover:before,
@@ -444,7 +453,6 @@ body {
 	grid-row: 1/2;
 	text-align: center;
   color: rgba(255,255,255, .8);
-	font-family: Roboto;
 	font-weight: 100;
 	font-size: 40px;
 	text-shadow: 0px 0px 5px currentColor;
@@ -452,54 +460,31 @@ body {
 }
 
 button.green{
-  margin-top: 174%;
-  margin-left: -8%;
-  height: 40px;
+
   color: black;
-  font-size: 20px;
 
 }
 
 button.orange{
-  margin-top: 210%;
-  margin-left: -110%;
-  height: 40px;
   color: black;
-  font-size: 20px;
 }
 
 button.red{
-  margin-top: 190%;
-  margin-left:-5%;
-  height: 40px;
   color: black;
-  font-size: 20px;
 
 }
 
 button.yellow{
-  margin-top: 230%;
-  margin-left: -109%;
-  height: 40px;
   color: black;
-  font-size: 20px;
 }
 
 button.blue{
-  margin-top: 190%;
-  margin-left:-5%;
-  height: 40px;
   color: black;
-  font-size: 20px;
 
 }
 
 button.purple{
-  margin-top: 230%;
-  margin-left: -109%;
-  height: 40px;
   color: black;
-  font-size: 20px;
 }
 
 
@@ -512,11 +497,9 @@ button.blue:focus ~ h1 { color: #ffc8cf; } button.blue:hover ~ h1 { color: #ffc8
 button.purple:focus ~ h1 { color: rgb(221,160,221); } button.purple:hover ~ h1 { color: rgb(221,160,221)!important; }
 
 
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+/* @import url('https://fonts.googleapis.com/css?family=PT+Sans'); */
 
-/* body {
-	background-color: #303f56;
-} */
+
 
 .social {
 	margin: 0 auto;
@@ -549,9 +532,7 @@ button.purple:focus ~ h1 { color: rgb(221,160,221); } button.purple:hover ~ h1 {
 	color: #4099FF;
 }
 
-/* .facebook {
-	color: #3B5998;
-} */
+
 .file-text-o {
 	color: #DB5A3C;
 }
@@ -593,23 +574,5 @@ a.link {
 	color: inherit;
 }
 
-/* paragraph Typewriter */
-@import url('https://fonts.googleapis.com/css?family=Barlow');
 
-/* body {margin:0; background:#117A65;} */
-
-.paragraph {
-  position:absolute;
-  font-family: 'Barlow', sans-serif;
-  color:white;
-  font-size:23.1px;
-  width:100%;
-  left:50%;
-  margin-top:140px;
-  transform:translateX(-50%) translateY(-50%);
-  display:none;
-
-  /* border-top:1px solid white; */
-  /* border-bottom:1px solid white; */
-  /* padding:20px 0px; */
-}
+/* Hover effect for card*/
