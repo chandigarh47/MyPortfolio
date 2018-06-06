@@ -172,8 +172,8 @@ footer {
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC'); */
 
 body {
-	/* font-family: 'Indie Flower', cursive !important; */
-  background: #FDE3A7; /*CAPE HONEY*/
+
+  background: #FDE3A7;
 	margin: 0px;
 	padding: 0px;
 }
@@ -188,17 +188,17 @@ h4 {
 	font-family: 'Amatic SC' !important;
 }
 
-.color1{color:#1BBC9B}/*MOUNTAIN MEADOW*/
-.color2{color:#C0392B/*TALL POPPY*/}
+.color1{color:#1BBC9B}
+.color2{color:#C0392B}
 
 
 .card {
-	color: #013243; /*SHERPA BLUE*/
-	/* position: absolute; */
-	margin-top: 20%;
+	color: #013243;
+
+	margin-top: 25%;
 	margin-left: 50%;
 	width: 300px;
-	/* height: 400px; */
+
 	background: #e0e1dc;
 	transform-style: preserve-3d;
 	transform: translate(-50%,-50%) perspective(2000px);
@@ -250,6 +250,7 @@ h4 {
 	height: 100%;
 	opacity: 0;
 	transition: .7s;
+
 }
 
 .card .imgBox img {
